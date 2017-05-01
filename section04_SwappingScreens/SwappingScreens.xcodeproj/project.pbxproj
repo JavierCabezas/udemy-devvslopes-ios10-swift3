@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B8E2B051EB7C69600475194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E2B041EB7C69600475194 /* AppDelegate.swift */; };
-		3B8E2B071EB7C69600475194 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E2B061EB7C69600475194 /* ViewController.swift */; };
+		3B8E2B071EB7C69600475194 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E2B061EB7C69600475194 /* LoginVC.swift */; };
 		3B8E2B0A1EB7C69600475194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E2B081EB7C69600475194 /* Main.storyboard */; };
 		3B8E2B0D1EB7C69600475194 /* SwappingScreens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E2B0B1EB7C69600475194 /* SwappingScreens.xcdatamodeld */; };
 		3B8E2B0F1EB7C69600475194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E2B0E1EB7C69600475194 /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		3B8E2B011EB7C69600475194 /* SwappingScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwappingScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8E2B041EB7C69600475194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B8E2B061EB7C69600475194 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B8E2B061EB7C69600475194 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3B8E2B091EB7C69600475194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B8E2B0C1EB7C69600475194 /* SwappingScreens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwappingScreens.xcdatamodel; sourceTree = "<group>"; };
 		3B8E2B0E1EB7C69600475194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				3B8E2B041EB7C69600475194 /* AppDelegate.swift */,
-				3B8E2B061EB7C69600475194 /* ViewController.swift */,
+				3B8E2B061EB7C69600475194 /* LoginVC.swift */,
 				3B8E2B081EB7C69600475194 /* Main.storyboard */,
 				3B8E2B0E1EB7C69600475194 /* Assets.xcassets */,
 				3B8E2B101EB7C69600475194 /* LaunchScreen.storyboard */,
@@ -204,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B8E2B071EB7C69600475194 /* ViewController.swift in Sources */,
+				3B8E2B071EB7C69600475194 /* LoginVC.swift in Sources */,
 				3B8E2B051EB7C69600475194 /* AppDelegate.swift in Sources */,
 				3B8E2B0D1EB7C69600475194 /* SwappingScreens.xcdatamodeld in Sources */,
 			);
@@ -418,6 +418,7 @@
 				3B8E2B231EB7C69600475194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B8E2B241EB7C69600475194 /* Build configuration list for PBXNativeTarget "SwappingScreensTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +427,7 @@
 				3B8E2B261EB7C69600475194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
