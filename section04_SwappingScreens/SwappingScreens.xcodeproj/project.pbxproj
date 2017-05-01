@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B2865441EB7C8370042003E /* MusicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2865431EB7C8370042003E /* MusicListVC.swift */; };
+		3B2865461EB7E04E0042003E /* PlaySongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2865451EB7E04E0042003E /* PlaySongVC.swift */; };
 		3B8E2B051EB7C69600475194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E2B041EB7C69600475194 /* AppDelegate.swift */; };
 		3B8E2B071EB7C69600475194 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E2B061EB7C69600475194 /* LoginVC.swift */; };
 		3B8E2B0A1EB7C69600475194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E2B081EB7C69600475194 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B2865431EB7C8370042003E /* MusicListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListVC.swift; sourceTree = "<group>"; };
+		3B2865451EB7E04E0042003E /* PlaySongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongVC.swift; sourceTree = "<group>"; };
 		3B8E2B011EB7C69600475194 /* SwappingScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwappingScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8E2B041EB7C69600475194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8E2B061EB7C69600475194 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -81,11 +85,13 @@
 			children = (
 				3B8E2B041EB7C69600475194 /* AppDelegate.swift */,
 				3B8E2B061EB7C69600475194 /* LoginVC.swift */,
+				3B2865431EB7C8370042003E /* MusicListVC.swift */,
 				3B8E2B081EB7C69600475194 /* Main.storyboard */,
 				3B8E2B0E1EB7C69600475194 /* Assets.xcassets */,
 				3B8E2B101EB7C69600475194 /* LaunchScreen.storyboard */,
 				3B8E2B131EB7C69600475194 /* Info.plist */,
 				3B8E2B0B1EB7C69600475194 /* SwappingScreens.xcdatamodeld */,
+				3B2865451EB7E04E0042003E /* PlaySongVC.swift */,
 			);
 			path = SwappingScreens;
 			sourceTree = "<group>";
@@ -205,7 +211,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8E2B071EB7C69600475194 /* LoginVC.swift in Sources */,
+				3B2865461EB7E04E0042003E /* PlaySongVC.swift in Sources */,
 				3B8E2B051EB7C69600475194 /* AppDelegate.swift in Sources */,
+				3B2865441EB7C8370042003E /* MusicListVC.swift in Sources */,
 				3B8E2B0D1EB7C69600475194 /* SwappingScreens.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
