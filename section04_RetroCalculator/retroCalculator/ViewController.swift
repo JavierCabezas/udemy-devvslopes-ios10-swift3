@@ -72,6 +72,7 @@ class ViewController: UIViewController {
     
     func processOperation(operation: Operation){
         playSound()
+        
         if currentOperation != Operation.Empty {
             if runningNumber != ""{
                 rightValStr = runningNumber
