@@ -15,6 +15,7 @@
 		3BAD95441EBAB78F009802EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAD95421EBAB78F009802EA /* LaunchScreen.storyboard */; };
 		3BAD954F1EBAB78F009802EA /* retroCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD954E1EBAB78F009802EA /* retroCalculatorTests.swift */; };
 		3BE99B481EBE50A50060BA2D /* Minecrafter.Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BE99B471EBE50A50060BA2D /* Minecrafter.Reg.ttf */; };
+		3BE99B4A1EBE52110060BA2D /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3BE99B491EBE52110060BA2D /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		3BAD954E1EBAB78F009802EA /* retroCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retroCalculatorTests.swift; sourceTree = "<group>"; };
 		3BAD95501EBAB78F009802EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BE99B471EBE50A50060BA2D /* Minecrafter.Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecrafter.Reg.ttf; sourceTree = "<group>"; };
+		3BE99B491EBE52110060BA2D /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3BE99B471EBE50A50060BA2D /* Minecrafter.Reg.ttf */,
+				3BE99B491EBE52110060BA2D /* btn.wav */,
 				3BAD95361EBAB78F009802EA /* AppDelegate.swift */,
 				3BAD95381EBAB78F009802EA /* ViewController.swift */,
 				3BAD953A1EBAB78F009802EA /* Main.storyboard */,
@@ -187,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BE99B4A1EBE52110060BA2D /* btn.wav in Resources */,
 				3BAD95441EBAB78F009802EA /* LaunchScreen.storyboard in Resources */,
 				3BAD95411EBAB78F009802EA /* Assets.xcassets in Resources */,
 				3BAD953C1EBAB78F009802EA /* Main.storyboard in Resources */,
