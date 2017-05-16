@@ -26,14 +26,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="Frh-yb-Jit">
-                                <rect key="frame" x="5" y="30" width="365" height="184"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="184" id="b2D-Dg-Xvm"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Hh-wi-aEw">
-                                <rect key="frame" x="5" y="214" width="365" height="40"/>
+                                <rect key="frame" x="5" y="184" width="365" height="40"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5BE-Se-25g">
                                         <rect key="frame" x="3" y="1" width="359" height="33"/>
@@ -71,10 +65,10 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w0x-rU-DLw">
-                                <rect key="frame" x="5" y="254" width="365" height="408"/>
+                                <rect key="frame" x="5" y="224" width="365" height="438"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" id="MG8-QO-usZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" id="MG8-QO-usZ" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="365" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MG8-QO-usZ" id="b0u-x2-ma4">
@@ -106,42 +100,51 @@
                                                 <constraint firstItem="Pm0-NF-Mzt" firstAttribute="centerY" secondItem="b0u-x2-ma4" secondAttribute="centerY" id="vR5-s6-MfV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="6Qw-8B-K6P" id="JQn-Ad-Ja4"/>
+                                            <outlet property="videoTitle" destination="Pm0-NF-Mzt" id="tZi-Qw-W4Q"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="Frh-yb-Jit">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="2p4-Cd-pyi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="6Hh-wi-aEw" secondAttribute="trailing" constant="5" id="7ny-1X-wZW"/>
                             <constraint firstItem="6Hh-wi-aEw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="8HL-G8-ELP"/>
-                            <constraint firstItem="Frh-yb-Jit" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Koc-Z3-KLW"/>
+                            <constraint firstItem="Frh-yb-Jit" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9TN-oT-opC"/>
+                            <constraint firstItem="Frh-yb-Jit" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HCs-NG-aoe"/>
+                            <constraint firstAttribute="trailing" secondItem="Frh-yb-Jit" secondAttribute="trailing" id="Q8o-yx-sFX"/>
                             <constraint firstItem="6Hh-wi-aEw" firstAttribute="top" secondItem="Frh-yb-Jit" secondAttribute="bottom" id="Scu-J0-PkM"/>
                             <constraint firstItem="w0x-rU-DLw" firstAttribute="top" secondItem="6Hh-wi-aEw" secondAttribute="bottom" id="UUT-iX-iYo"/>
-                            <constraint firstAttribute="trailing" secondItem="Frh-yb-Jit" secondAttribute="trailing" constant="5" id="YzV-mH-4bn"/>
                             <constraint firstAttribute="trailing" secondItem="w0x-rU-DLw" secondAttribute="trailing" constant="5" id="cMO-vn-e3T"/>
                             <constraint firstItem="w0x-rU-DLw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="dj9-fa-45T"/>
-                            <constraint firstItem="Frh-yb-Jit" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="iFb-Yb-foA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w0x-rU-DLw" secondAttribute="bottom" constant="5" id="rN1-DH-3zQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="U5e-vu-Wl1" kind="showDetail" identifier="VideoVC" id="oTX-8T-pDl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
-        <!--View Controller-->
+        <!--VideoVC-->
         <scene sceneID="tV7-Za-fbX">
             <objects>
-                <viewController id="U5e-vu-Wl1" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oEf-rD-5MY"/>
-                        <viewControllerLayoutGuide type="bottom" id="Cpl-dq-yJv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vyK-TC-iFd">
+                <viewController id="U5e-vu-Wl1" customClass="VideoVC" customModule="PartyRockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="5Y1-F6-hKA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </webView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnD-iN-XV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
