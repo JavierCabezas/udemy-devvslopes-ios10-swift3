@@ -68,11 +68,11 @@
                                 <rect key="frame" x="5" y="224" width="365" height="438"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" id="MG8-QO-usZ" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" id="MG8-QO-usZ" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="365" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MG8-QO-usZ" id="b0u-x2-ma4">
-                                            <rect key="frame" x="0.0" y="0.0" width="365" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="6Qw-8B-K6P">
@@ -129,6 +129,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="w0x-rU-DLw" id="ZGH-pE-Zv1"/>
                         <segue destination="U5e-vu-Wl1" kind="showDetail" identifier="VideoVC" id="oTX-8T-pDl"/>
                     </connections>
                 </viewController>
