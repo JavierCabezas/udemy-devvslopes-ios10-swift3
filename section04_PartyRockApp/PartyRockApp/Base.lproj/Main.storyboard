@@ -141,11 +141,14 @@
         <scene sceneID="tV7-Za-fbX">
             <objects>
                 <viewController id="U5e-vu-Wl1" customClass="VideoVC" customModule="PartyRockApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="5Y1-F6-hKA">
+                    <webView key="view" contentMode="scaleToFill" id="U7o-YI-zvx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </webView>
+                    <connections>
+                        <outlet property="webView" destination="U7o-YI-zvx" id="9ub-sG-VM8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnD-iN-XV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
