@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		01E9BD2844632B3ADA0FC922 /* Pods_rainyshinycloudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9822FF551F1E7F9856CE10 /* Pods_rainyshinycloudy.framework */; };
 		3B0596B21ECEA498004E75A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0596B11ECEA498004E75A0 /* AppDelegate.swift */; };
-		3B0596B41ECEA498004E75A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0596B31ECEA498004E75A0 /* ViewController.swift */; };
+		3B0596B41ECEA498004E75A0 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0596B31ECEA498004E75A0 /* WeatherVC.swift */; };
 		3B0596B71ECEA498004E75A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0596B51ECEA498004E75A0 /* Main.storyboard */; };
 		3B0596BA1ECEA498004E75A0 /* rainyshinycloudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B0596B81ECEA498004E75A0 /* rainyshinycloudy.xcdatamodeld */; };
 		3B0596BC1ECEA498004E75A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0596BB1ECEA498004E75A0 /* Assets.xcassets */; };
@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		3B0596AE1ECEA498004E75A0 /* rainyshinycloudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainyshinycloudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0596B11ECEA498004E75A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B0596B31ECEA498004E75A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B0596B31ECEA498004E75A0 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		3B0596B61ECEA498004E75A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B0596B91ECEA498004E75A0 /* rainyshinycloudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rainyshinycloudy.xcdatamodel; sourceTree = "<group>"; };
 		3B0596BB1ECEA498004E75A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				3B0596B11ECEA498004E75A0 /* AppDelegate.swift */,
-				3B0596B31ECEA498004E75A0 /* ViewController.swift */,
+				3B0596B31ECEA498004E75A0 /* WeatherVC.swift */,
 				3B0596B51ECEA498004E75A0 /* Main.storyboard */,
 				3B0596BB1ECEA498004E75A0 /* Assets.xcassets */,
 				3B0596BD1ECEA498004E75A0 /* LaunchScreen.storyboard */,
@@ -279,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0596B41ECEA498004E75A0 /* ViewController.swift in Sources */,
+				3B0596B41ECEA498004E75A0 /* WeatherVC.swift in Sources */,
 				3B0596B21ECEA498004E75A0 /* AppDelegate.swift in Sources */,
 				3B0596BA1ECEA498004E75A0 /* rainyshinycloudy.xcdatamodeld in Sources */,
 			);
@@ -495,6 +495,7 @@
 				3B0596D01ECEA498004E75A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B0596D11ECEA498004E75A0 /* Build configuration list for PBXNativeTarget "rainyshinycloudyTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +504,7 @@
 				3B0596D31ECEA498004E75A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
