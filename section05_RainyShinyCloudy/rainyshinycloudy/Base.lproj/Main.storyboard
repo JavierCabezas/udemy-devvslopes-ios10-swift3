@@ -32,16 +32,13 @@
                                                 <rect key="frame" x="10" y="10" width="300" height="270"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="OyO-Zv-fYr" userLabel="Label left">
-                                                        <rect key="frame" x="0.0" y="3" width="180" height="264"/>
+                                                        <rect key="frame" x="0.0" y="2.5" width="180" height="265.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today May 20th, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="GBi-RU-eab">
-                                                                <rect key="frame" x="0.0" y="0.0" width="180" height="25"/>
-                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZED-KP-kyX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="25"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                                <color key="textColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
-                                                                <variation key="heightClass=regular-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
-                                                                </variation>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="Tbk-sb-uER">
                                                                 <rect key="frame" x="0.0" y="89" width="147" height="87.5"/>
@@ -49,14 +46,11 @@
                                                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Santiago, Chile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKp-qI-AX6">
-                                                                <rect key="frame" x="0.0" y="240.5" width="117" height="23.5"/>
-                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pel-Fp-Yzz">
+                                                                <rect key="frame" x="0.0" y="240.5" width="46" height="25"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                                <color key="textColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
-                                                                <variation key="heightClass=regular-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                                                </variation>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
@@ -94,7 +88,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LAN-Fk-jRf" id="GPB-2n-1fM" userLabel="1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="xBc-Xt-45N">
@@ -177,11 +171,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentCityLabel" destination="Pel-Fp-Yzz" id="4Gd-ed-1jw"/>
+                        <outlet property="currentDateLabel" destination="ZED-KP-kyX" id="6My-hp-0E9"/>
                         <outlet property="currentTempLabel" destination="Tbk-sb-uER" id="AfM-9d-yqY"/>
                         <outlet property="currentWeatherImage" destination="Hh8-mp-cli" id="ODH-Tg-UST"/>
                         <outlet property="currentWeatherLabel" destination="NUG-Da-Epp" id="Ebz-Pd-xhY"/>
-                        <outlet property="dateLabel" destination="GBi-RU-eab" id="Nzf-yP-O3I"/>
-                        <outlet property="locationLabel" destination="UKp-qI-AX6" id="oFR-H1-U4M"/>
                         <outlet property="tableView" destination="LFo-BR-Ki8" id="XFA-9C-INL"/>
                     </connections>
                 </viewController>
