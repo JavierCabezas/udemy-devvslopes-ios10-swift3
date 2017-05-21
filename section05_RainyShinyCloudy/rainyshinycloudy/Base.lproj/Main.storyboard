@@ -90,11 +90,11 @@
                                         <rect key="frame" x="0.0" y="300" width="320" height="180"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="LAN-Fk-jRf">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="70" id="LAN-Fk-jRf">
                                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LAN-Fk-jRf" id="GPB-2n-1fM" userLabel="1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="xBc-Xt-45N">
@@ -153,6 +153,7 @@
                                                         <constraint firstAttribute="trailing" secondItem="xBc-Xt-45N" secondAttribute="trailing" constant="10" id="sCS-90-mB6"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -175,6 +176,14 @@
                             <constraint firstAttribute="trailing" secondItem="3hF-H4-I2u" secondAttribute="trailing" id="vGp-7c-hzW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTempLabel" destination="Tbk-sb-uER" id="AfM-9d-yqY"/>
+                        <outlet property="currentWeatherImage" destination="Hh8-mp-cli" id="ODH-Tg-UST"/>
+                        <outlet property="currentWeatherLabel" destination="NUG-Da-Epp" id="Ebz-Pd-xhY"/>
+                        <outlet property="dateLabel" destination="GBi-RU-eab" id="Nzf-yP-O3I"/>
+                        <outlet property="locationLabel" destination="UKp-qI-AX6" id="oFR-H1-U4M"/>
+                        <outlet property="tableView" destination="LFo-BR-Ki8" id="XFA-9C-INL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
