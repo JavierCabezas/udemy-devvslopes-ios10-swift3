@@ -38,4 +38,12 @@ class CurrentWeather {
         return "Today, " + dateFormatter.string(from: Date())
     }
     
+    func downloadWeatherDetails(completed: DownloadComplete){
+        let currentWeatherURL = URL(string: CURRENT_URL)!
+        Alamofire.request(currentWeatherURL).responseJSON { response in
+            let result = response.result
+            print(response)
+        }
+        completed()
+    }
 }

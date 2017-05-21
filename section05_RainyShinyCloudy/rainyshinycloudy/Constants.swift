@@ -10,8 +10,9 @@ import Foundation
 
 let BASE_URL = "http://samples.openweathermap.org/data/2.5/weather"
 let LAT = "lat="
-let LONG = "long="
+let LONG = "lon="
 let APP_ID = "appid="
 let API_KEY = "0e955a2338ef1ce44b5cd29cc0e44fbb"
+typealias DownloadComplete = () -> ()
 
 let CURRENT_URL = "\(BASE_URL)?\(LAT)-36&\(LONG)123&\(APP_ID)\(API_KEY)"
