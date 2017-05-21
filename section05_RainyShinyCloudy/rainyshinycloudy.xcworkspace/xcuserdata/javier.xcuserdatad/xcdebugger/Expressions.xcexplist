@@ -3,12 +3,31 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "CurrentWeather.(downloadWeatherDetails(completed : () -&gt; ()) -&gt; ()).(closure #1):CurrentWeather.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.cityName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WeatherWC.updateMainUI() -&gt; ():WeatherVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentWeather">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "CurrentWeather.downloadWeatherDetails(completed : () -&gt; ()) -&gt; ():CurrentWeather.swift">
          <PersistentStrings>
             <PersistentString
                value = "CURRENT_URL">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CurrentWeather.cityName.getter:CurrentWeather.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>
