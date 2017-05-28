@@ -35,6 +35,12 @@
             <PersistentString
                value = "forecasts">
             </PersistentString>
+            <PersistentString
+               value = "forecast_item[0][&quot;main&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "forecast_item[&quot;max&quot;]">
+            </PersistentString>
          </PersistentStrings>
       </ContextState>
    </ContextStates>

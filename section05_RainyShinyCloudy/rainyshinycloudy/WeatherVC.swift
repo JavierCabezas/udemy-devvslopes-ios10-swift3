@@ -30,7 +30,7 @@ class WeatherWC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     
         forecastList.downloadForecastData {
-            //$dump(self.forecastList.forecasts
+            //dump(self.forecastList.forecasts
         }
     }
     
