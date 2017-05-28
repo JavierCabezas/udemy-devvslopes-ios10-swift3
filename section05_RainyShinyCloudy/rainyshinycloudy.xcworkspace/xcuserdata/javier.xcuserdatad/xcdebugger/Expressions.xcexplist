@@ -29,5 +29,13 @@
       <ContextState
          contextName = "CurrentWeather.cityName.getter:CurrentWeather.swift">
       </ContextState>
+      <ContextState
+         contextName = "ForecastList.(downloadForecastData(completed : () -&gt; ()) -&gt; ()).(closure #1):ForecastList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "forecasts">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

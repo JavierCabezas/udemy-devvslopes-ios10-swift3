@@ -16,8 +16,8 @@ class WeatherWC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var currentDateLabel: UILabel!
     @IBOutlet weak var currentCityLabel: UILabel!
     
-    
     var currentWeather = CurrentWeather()
+    var forecastList = ForecastList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,10 @@ class WeatherWC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         currentWeather.downloadWeatherDetails {
             self.updateMainUI()
+        }
+    
+        forecastList.downloadForecastData {
+            //$dump(self.forecastList.forecasts
         }
     }
     
