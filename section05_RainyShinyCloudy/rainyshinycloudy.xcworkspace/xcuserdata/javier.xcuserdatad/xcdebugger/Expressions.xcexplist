@@ -19,6 +19,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "WeatherWC.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:WeatherVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.forecastList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "CurrentWeather.downloadWeatherDetails(completed : () -&gt; ()) -&gt; ():CurrentWeather.swift">
          <PersistentStrings>
             <PersistentString

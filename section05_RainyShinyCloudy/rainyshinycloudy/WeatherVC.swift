@@ -30,7 +30,7 @@ class WeatherWC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     
         forecastList.downloadForecastData {
-            //dump(self.forecastList.forecasts
+            self.tableView.reloadData()
         }
     }
     
@@ -39,13 +39,17 @@ class WeatherWC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return self.forecastList.forecasts.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
-        
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
+            let forecast_cell = self.forecastList.forecasts[indexPath.row]
+            cell.configureCell(f: forecast_cell)
+            return cell
+        } else {
+            return WeatherCell()
+        }
     }
     
     func updateMainUI() {
