@@ -15,7 +15,7 @@ let APP_ID = "appid="
 let API_KEY = "0e955a2338ef1ce44b5cd29cc0e44fbb"
 typealias DownloadComplete = () -> ()
 
-let CURRENT_URL = "\(BASE_URL)?\(LAT)-33.456940&\(LONG)-70.648270&\(APP_ID)\(API_KEY)"
+let CURRENT_URL = "\(BASE_URL)?\(LAT)-33.45&\(LONG)-70.64&\(APP_ID)\(API_KEY)"
 
 
 let FORECAST_BASE = "http://samples.openweathermap.org/data/2.5/forecast/daily"
