@@ -32,14 +32,6 @@ class WeatherWC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startMonitoringSignificantLocationChanges()
-        
-        currentWeather.downloadWeatherDetails {
-            self.updateMainUI()
-        }
-    
-        forecastList.downloadForecastData {
-            self.tableView.reloadData()
-        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,8 +53,14 @@ class WeatherWC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
-            print(currentLocation)
             
+            currentWeather.downloadWeatherDetails {
+                self.updateMainUI()
+            }
+            
+            forecastList.downloadForecastData {
+                self.tableView.reloadData()
+            }
         } else {
             locationManager.requestWhenInUseAuthorization()
             locationAuthStatus()
