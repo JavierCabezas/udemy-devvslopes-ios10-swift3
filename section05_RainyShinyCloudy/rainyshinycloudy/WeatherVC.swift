@@ -42,6 +42,11 @@ class WeatherWC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        locationAuthStatus()
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -53,6 +58,11 @@ class WeatherWC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     func locationAuthStatus() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             currentLocation = locationManager.location
+            
+            Location.sharedInstance.latitude = currentLocation.coordinate.latitude
+            Location.sharedInstance.longitude = currentLocation.coordinate.longitude
+            print(currentLocation)
+            
         } else {
             locationManager.requestWhenInUseAuthorization()
             locationAuthStatus()
