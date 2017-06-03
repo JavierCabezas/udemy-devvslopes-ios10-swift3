@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0909EE1EE36EF500C43317 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3B0909ED1EE36EF500C43317 /* pokemon.csv */; };
 		3BCC1FFA1EE32B4400F595CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCC1FF91EE32B4400F595CC /* AppDelegate.swift */; };
 		3BCC1FFC1EE32B4400F595CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCC1FFB1EE32B4400F595CC /* ViewController.swift */; };
 		3BCC1FFF1EE32B4400F595CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCC1FFD1EE32B4400F595CC /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B0909ED1EE36EF500C43317 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		3BCC1FF61EE32B4400F595CC /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCC1FF91EE32B4400F595CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BCC1FFB1EE32B4400F595CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				3BCC1FFB1EE32B4400F595CC /* ViewController.swift */,
 				3BCC1FFD1EE32B4400F595CC /* Main.storyboard */,
 				3BCC20031EE32B4400F595CC /* Assets.xcassets */,
+				3B0909ED1EE36EF500C43317 /* pokemon.csv */,
 				3BCC20051EE32B4400F595CC /* LaunchScreen.storyboard */,
 				3BCC20081EE32B4400F595CC /* Info.plist */,
 				3BCC20001EE32B4400F595CC /* pokedex.xcdatamodeld */,
@@ -186,6 +189,7 @@
 			files = (
 				3BCC20071EE32B4400F595CC /* LaunchScreen.storyboard in Resources */,
 				3BCC20041EE32B4400F595CC /* Assets.xcassets in Resources */,
+				3B0909EE1EE36EF500C43317 /* pokemon.csv in Resources */,
 				3BCC1FFF1EE32B4400F595CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +422,7 @@
 				3BCC20181EE32B4400F595CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BCC20191EE32B4400F595CC /* Build configuration list for PBXNativeTarget "pokedexTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				3BCC201B1EE32B4400F595CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
