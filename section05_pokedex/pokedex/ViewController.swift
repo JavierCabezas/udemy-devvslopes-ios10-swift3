@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collection :UICollectionView!
     
     var pokemon = [Pokemon]()
+    var musicPlayer: AVAudioPlayer!
+    var isAudioPlaying = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,5 +71,26 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 100, height: 100)
     }
+    
+    @IBAction func musicBtnPressed(_ sender: Any) {
+        if(isAudioPlaying){
+            musicPlayer.stop()
+            isAudioPlaying = false
+        }else{
+            let music_path = Bundle.main.path(forResource: "pokemon_center_theme", ofType: "mp3")!
+            do {
+                musicPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: music_path))
+                musicPlayer.prepareToPlay()
+                musicPlayer.numberOfLoops = -1
+                musicPlayer.play()
+                isAudioPlaying = true
+                
+            } catch let err as NSError {
+                print(err.debugDescription)
+                isAudioPlaying = false
+            }
+        }
+    }
+    
 }
 
