@@ -18,6 +18,9 @@ class PokemonDetailVC: UIViewController {
         self.nameLabel.text = pokemon.name.capitalized
     }
     
+    @IBAction func onBackClick(_ sender: Any) {
+        performSegue(withIdentifier: "PokemonListVC", sender: nil)
+    }
     
 
 }

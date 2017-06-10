@@ -159,27 +159,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRF-gc-UHb">
-                                <rect key="frame" x="174" y="166" width="42" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hM1-HG-aXW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRF-gc-UHb">
+                                        <rect key="frame" x="158.5" y="7.5" width="58.5" height="50.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="e2a-1E-Fp8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="36"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npi-lW-unx">
+                                        <rect key="frame" x="2" y="12.5" width="60" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="F20-bN-vf8"/>
+                                            <constraint firstAttribute="height" constant="40" id="m69-1u-a7X"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="onBackClick:" destination="eds-YR-bh5" eventType="touchUpInside" id="vdC-W3-K6U"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.21440107259999999" blue="0.26618358320000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="npi-lW-unx" firstAttribute="leading" secondItem="hM1-HG-aXW" secondAttribute="leading" constant="2" id="5om-a4-oZ3"/>
+                                    <constraint firstItem="npi-lW-unx" firstAttribute="centerY" secondItem="hM1-HG-aXW" secondAttribute="centerY" id="AfM-PY-MCx"/>
+                                    <constraint firstAttribute="height" constant="65" id="EGm-b3-IPl"/>
+                                    <constraint firstItem="BRF-gc-UHb" firstAttribute="centerY" secondItem="hM1-HG-aXW" secondAttribute="centerY" id="pN5-Zt-Jnd"/>
+                                    <constraint firstItem="BRF-gc-UHb" firstAttribute="centerX" secondItem="hM1-HG-aXW" secondAttribute="centerX" id="usK-du-zIl"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.21440107259999999" blue="0.26618358320000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hM1-HG-aXW" firstAttribute="leading" secondItem="URR-dw-MwQ" secondAttribute="leading" id="R0P-mV-j9d"/>
+                            <constraint firstAttribute="trailing" secondItem="hM1-HG-aXW" secondAttribute="trailing" id="fdT-lU-Gya"/>
+                            <constraint firstItem="hM1-HG-aXW" firstAttribute="top" secondItem="URR-dw-MwQ" secondAttribute="top" id="zD4-2c-mEx"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="BRF-gc-UHb" id="zeq-qc-s3I"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="PokemonListVC" id="0cd-2U-jYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzV-T7-UnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="82.3088455772114"/>
+            <point key="canvasLocation" x="932" y="-54"/>
         </scene>
     </scenes>
     <resources>
         <image name="282" width="120" height="120"/>
+        <image name="back" width="100" height="67"/>
         <image name="bg" width="1920" height="1200"/>
         <image name="music" width="100" height="100"/>
     </resources>
