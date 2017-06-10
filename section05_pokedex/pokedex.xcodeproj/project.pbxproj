@@ -20,6 +20,7 @@
 		3BCC20041EE32B4400F595CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCC20031EE32B4400F595CC /* Assets.xcassets */; };
 		3BCC20071EE32B4400F595CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCC20051EE32B4400F595CC /* LaunchScreen.storyboard */; };
 		3BCC20121EE32B4400F595CC /* pokedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCC20111EE32B4400F595CC /* pokedexTests.swift */; };
+		3BFC41DD1EEBA8E300AD9223 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC41DC1EEBA8E300AD9223 /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		3BCC200D1EE32B4400F595CC /* pokedexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokedexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCC20111EE32B4400F595CC /* pokedexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokedexTests.swift; sourceTree = "<group>"; };
 		3BCC20131EE32B4400F595CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BFC41DC1EEBA8E300AD9223 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3BCC1FFB1EE32B4400F595CC /* ViewController.swift */,
+				3BFC41DC1EEBA8E300AD9223 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				3BCC20021EE32B4400F595CC /* pokedex.xcdatamodeld in Sources */,
 				3B0909F11EE36FB200C43317 /* Pokemon.swift in Sources */,
 				3BCC1FFC1EE32B4400F595CC /* ViewController.swift in Sources */,
+				3BFC41DD1EEBA8E300AD9223 /* PokemonDetailVC.swift in Sources */,
 				3BCC1FFA1EE32B4400F595CC /* AppDelegate.swift in Sources */,
 				3B5A2F321EE3B065006EB9C1 /* PokeCell.swift in Sources */,
 			);
