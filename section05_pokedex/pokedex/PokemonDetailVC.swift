@@ -11,11 +11,14 @@ import UIKit
 class PokemonDetailVC: UIViewController {
     var pokemon: Pokemon!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var pokemonPictureImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.nameLabel.text = pokemon.name.capitalized
+        self.pokemonPictureImg.image = UIImage(named: "\(pokemon.pokedexId)")!
+    
     }
     
     @IBAction func onBackClick(_ sender: Any) {
