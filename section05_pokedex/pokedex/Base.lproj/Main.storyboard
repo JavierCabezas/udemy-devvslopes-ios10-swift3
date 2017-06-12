@@ -42,7 +42,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokédex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gen-0J-83q">
-                                        <rect key="frame" x="93.5" y="7.5" width="137" height="50.5"/>
+                                        <rect key="frame" x="93" y="8" width="137" height="50.5"/>
                                         <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="36"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -387,9 +387,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="atkLbl" destination="wRj-oz-T6G" id="8vo-ge-btm"/>
+                        <outlet property="currentEvoImg" destination="oqW-v7-eut" id="Xfa-uP-mbK"/>
+                        <outlet property="defLbl" destination="em0-ym-M95" id="0hq-Jc-jBZ"/>
+                        <outlet property="descriptionLbl" destination="MEo-3c-YOA" id="ePB-RX-2pq"/>
+                        <outlet property="heightLbl" destination="Mm7-u1-lUs" id="rZo-kl-1XD"/>
                         <outlet property="nameLabel" destination="BRF-gc-UHb" id="zeq-qc-s3I"/>
+                        <outlet property="nextEvoImg" destination="qi1-Lu-41i" id="pzu-Bt-8ys"/>
+                        <outlet property="nextEvolutionLbl" destination="D1L-q9-Aav" id="DM9-2w-8wy"/>
+                        <outlet property="numberLbl" destination="nci-9a-qAc" id="qHl-wl-rdh"/>
                         <outlet property="pokemonPictureImg" destination="lzV-KV-tm4" id="g8g-Ta-TB9"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="PokemonListVC" id="0cd-2U-jYK"/>
+                        <outlet property="typeLbl" destination="eiy-cP-J1j" id="gtz-eW-j1b"/>
+                        <outlet property="weightLbl" destination="kzV-AJ-Lmi" id="liK-gF-6GR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzV-T7-UnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
