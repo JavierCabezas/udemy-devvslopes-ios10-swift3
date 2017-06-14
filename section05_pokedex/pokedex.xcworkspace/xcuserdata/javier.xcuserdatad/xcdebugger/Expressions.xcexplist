@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "PokemonDetailVC.updateUI() -&gt; ():PokemonDetailVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pokemon">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "Pokemon.(downloadPokemonDetail(completed : () -&gt; ()) -&gt; ()).(closure #1):Pokemon.swift">
          <PersistentStrings>
             <PersistentString
