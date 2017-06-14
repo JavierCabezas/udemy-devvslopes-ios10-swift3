@@ -17,18 +17,27 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var numberLbl: UILabel!
     @IBOutlet weak var heightLbl: UILabel!
     @IBOutlet weak var weightLbl: UILabel!
-    @IBOutlet weak var atkLbl: UIStackView!
     @IBOutlet weak var defLbl: UILabel!
     @IBOutlet weak var nextEvolutionLbl: UILabel!
     @IBOutlet weak var currentEvoImg: UIImageView!
     @IBOutlet weak var nextEvoImg: UIImageView!
+    @IBOutlet weak var attackLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.nameLabel.text = pokemon.name.capitalized
-        self.pokemonPictureImg.image = UIImage(named: "\(pokemon.pokedexId)")!
+        
+        pokemon.downloadPokemonDetail {
+            self.updateUI()
+        }
+    }
     
+    func updateUI(){
+        attackLabel.text = pokemon.attack
+        defLbl.text = pokemon.defense
+        nameLabel.text = pokemon.name.capitalized
+        pokemonPictureImg.image = UIImage(named: "\(pokemon.pokedexId)")!
+        numberLbl.text = "\(pokemon.pokedexId)"
     }
     
     @IBAction func onBackClick(_ sender: Any) {
