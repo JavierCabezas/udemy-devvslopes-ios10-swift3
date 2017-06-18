@@ -37,7 +37,10 @@ class PokemonDetailVC: UIViewController {
         defLbl.text = pokemon.defense
         nameLabel.text = pokemon.name.capitalized
         pokemonPictureImg.image = UIImage(named: "\(pokemon.pokedexId)")!
+        currentEvoImg.image = UIImage(named: "\(pokemon.pokedexId)")!
         numberLbl.text = "\(pokemon.pokedexId)"
+        typeLbl.text = pokemon.type
+        
     }
     
     @IBAction func onBackClick(_ sender: Any) {
