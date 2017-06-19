@@ -27,8 +27,11 @@ class PokemonDetailVC: UIViewController {
         super.viewDidLoad()
 
         
-        pokemon.downloadPokemonDetail {
+        self.pokemon.downloadPokemonDetail {
             self.updateUI()
+            self.pokemon.downloadDescription {
+                self.updateUI()
+            }
         }
     }
     
@@ -40,6 +43,7 @@ class PokemonDetailVC: UIViewController {
         currentEvoImg.image = UIImage(named: "\(pokemon.pokedexId)")!
         numberLbl.text = "\(pokemon.pokedexId)"
         typeLbl.text = pokemon.type
+        descriptionLbl.text = pokemon.description
         
     }
     

@@ -21,6 +21,7 @@ class Pokemon {
     private var _nextEvolutionTxt:String!
     private var _nextEvolutionId:Int!
     private var _pokemonURL: String!
+    private var _descURL: String!
     
     var name: String {
         return _name == nil ? "" : _name
@@ -67,6 +68,18 @@ class Pokemon {
         self._pokemonURL = URL_BASE + URL_POKEMON + "\(self.pokedexId)"
     }
     
+
+    func downloadDescription(completed: @escaping DownloadComplete) {
+        Alamofire.request(self._descURL).responseJSON { response in
+            if let descDict = response.result.value as? Dictionary <String, AnyObject> {
+                if let d = descDict["description"] as? String {
+                    self._description = d
+                }
+            }
+            completed()
+        }
+    }
+    
     func downloadPokemonDetail(completed: @escaping DownloadComplete){
         Alamofire.request(self._pokemonURL).responseJSON { response in
             let result = response.result
@@ -87,8 +100,8 @@ class Pokemon {
                     self._defense = "\(def)"
                 }
                 
-                if let types = dict["types"] as? [Dictionary<String, String>]{
-                    if types.count == 1{
+                if let types = dict["types"] as? [Dictionary<String, String>] {
+                    if types.count == 1 {
                         if let type_1 = types[0]["name"] {
                             self._type = type_1.capitalized
                         }
@@ -100,8 +113,13 @@ class Pokemon {
                         }
                     }
                 }
+                
+                if let descArr = dict["descriptions"] as? [Dictionary<String, String>], descArr.count > 0 {
+                    if let url = descArr[0]["resource_uri"] {
+                        self._descURL = URL_BASE + url
+                    }
+                }
             }
-            
             completed()
         }
     }
