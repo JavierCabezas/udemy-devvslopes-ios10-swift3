@@ -20,6 +20,8 @@ class Pokemon {
     private var _weigth:String!
     private var _nextEvolutionTxt:String!
     private var _nextEvolutionId:Int!
+    private var _nextEvolutionName: String!
+    private var _nextEvolutionLvl: String!
     private var _pokemonURL: String!
     private var _descURL: String!
     
@@ -60,6 +62,14 @@ class Pokemon {
     
     var nextEvolutionId:Int {
         return _nextEvolutionId == nil ? 0 : _nextEvolutionId
+    }
+    
+    var nextEvolutionName:String {
+        return _nextEvolutionName == nil ? "" : _nextEvolutionName
+    }
+    
+    var nextEvolutionLvl:String {
+        return _nextEvolutionLvl == nil ? "" : _nextEvolutionLvl
     }
     
     init(name: String, pokedexId: Int){
@@ -117,6 +127,14 @@ class Pokemon {
                 if let descArr = dict["descriptions"] as? [Dictionary<String, String>], descArr.count > 0 {
                     if let url = descArr[0]["resource_uri"] {
                         self._descURL = URL_BASE + url
+                    }
+                }
+                
+                if let evolutions = dict["evolutions"] as? [Dictionary<String, AnyObject>], evolutions.count > 0 {
+                    if let nextEvo =  evolutions[0]["to"] as? String {
+                        if nextEvo.range(of: "mega") == nil {
+                            self._nextEvolutionName = nextEvo
+                        }
                     }
                 }
             }
