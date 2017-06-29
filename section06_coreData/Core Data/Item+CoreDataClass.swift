@@ -12,4 +12,9 @@ import CoreData
 
 public class Item: NSManagedObject {
 
+    // Auto set the date on insert
+    public override func awakeFromInsert() {
+            super.awakeFromInsert()
+            self.created = NSDate()
+    }
 }
