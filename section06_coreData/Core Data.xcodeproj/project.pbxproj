@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0196EE1F05229300BE557E /* 2016-tesla-model s-front_11809_032_640x480_evox02.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B0196ED1F05229300BE557E /* 2016-tesla-model s-front_11809_032_640x480_evox02.png */; };
 		3B3D58871F0365CF00F22294 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D587F1F0365CF00F22294 /* ItemType+CoreDataClass.swift */; };
 		3B3D58881F0365CF00F22294 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D58801F0365CF00F22294 /* ItemType+CoreDataProperties.swift */; };
 		3B3D58891F0365CF00F22294 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D58811F0365CF00F22294 /* Item+CoreDataClass.swift */; };
@@ -16,7 +17,7 @@
 		3B3D588D1F0365CF00F22294 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D58851F0365CF00F22294 /* Image+CoreDataClass.swift */; };
 		3B3D588E1F0365CF00F22294 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D58861F0365CF00F22294 /* Image+CoreDataProperties.swift */; };
 		3B9E9B7F1F0360540005233E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E9B7E1F0360540005233E /* AppDelegate.swift */; };
-		3B9E9B811F0360540005233E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E9B801F0360540005233E /* ViewController.swift */; };
+		3B9E9B811F0360540005233E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E9B801F0360540005233E /* MainVC.swift */; };
 		3B9E9B841F0360540005233E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9E9B821F0360540005233E /* Main.storyboard */; };
 		3B9E9B871F0360540005233E /* Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E9B851F0360540005233E /* Core_Data.xcdatamodeld */; };
 		3B9E9B891F0360540005233E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9E9B881F0360540005233E /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B0196ED1F05229300BE557E /* 2016-tesla-model s-front_11809_032_640x480_evox02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2016-tesla-model s-front_11809_032_640x480_evox02.png"; sourceTree = "<group>"; };
 		3B3D587F1F0365CF00F22294 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3B3D58801F0365CF00F22294 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3B3D58811F0365CF00F22294 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -34,7 +36,7 @@
 		3B3D58861F0365CF00F22294 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3B9E9B7B1F0360540005233E /* Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9E9B7E1F0360540005233E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B9E9B801F0360540005233E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B9E9B801F0360540005233E /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		3B9E9B831F0360540005233E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B9E9B861F0360540005233E /* Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data.xcdatamodel; sourceTree = "<group>"; };
 		3B9E9B881F0360540005233E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,7 +99,8 @@
 			children = (
 				3B3D585D1F03642100F22294 /* Model */,
 				3B9E9B7E1F0360540005233E /* AppDelegate.swift */,
-				3B9E9B801F0360540005233E /* ViewController.swift */,
+				3B9E9B801F0360540005233E /* MainVC.swift */,
+				3B0196ED1F05229300BE557E /* 2016-tesla-model s-front_11809_032_640x480_evox02.png */,
 				3B9E9B821F0360540005233E /* Main.storyboard */,
 				3B9E9B881F0360540005233E /* Assets.xcassets */,
 				3B9E9B8A1F0360540005233E /* LaunchScreen.storyboard */,
@@ -167,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0196EE1F05229300BE557E /* 2016-tesla-model s-front_11809_032_640x480_evox02.png in Resources */,
 				3B9E9B8C1F0360540005233E /* LaunchScreen.storyboard in Resources */,
 				3B9E9B891F0360540005233E /* Assets.xcassets in Resources */,
 				3B9E9B841F0360540005233E /* Main.storyboard in Resources */,
@@ -185,7 +189,7 @@
 				3B3D58871F0365CF00F22294 /* ItemType+CoreDataClass.swift in Sources */,
 				3B3D58881F0365CF00F22294 /* ItemType+CoreDataProperties.swift in Sources */,
 				3B3D588C1F0365CF00F22294 /* Store+CoreDataProperties.swift in Sources */,
-				3B9E9B811F0360540005233E /* ViewController.swift in Sources */,
+				3B9E9B811F0360540005233E /* MainVC.swift in Sources */,
 				3B3D588B1F0365CF00F22294 /* Store+CoreDataClass.swift in Sources */,
 				3B9E9B7F1F0360540005233E /* AppDelegate.swift in Sources */,
 				3B9E9B871F0360540005233E /* Core_Data.xcdatamodeld in Sources */,
