@@ -102,6 +102,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="HGl-hx-fdR" secondAttribute="bottom" id="xhg-ep-KKH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
