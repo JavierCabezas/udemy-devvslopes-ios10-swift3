@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="132" width="375" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="3Dr-Mz-DoH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="3Dr-Mz-DoH" customClass="ItemCell" customModule="Core_Data" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Dr-Mz-DoH" id="wcT-Wp-Nad">
@@ -44,8 +44,8 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGl-hx-fdR">
                                                     <rect key="frame" x="8" y="8" width="359" height="133.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2016-tesla-model s-front_11809_032_640x480_evox02.png" translatesAutoresizingMaskIntoConstraints="NO" id="HQC-jB-rmd">
-                                                            <rect key="frame" x="8" y="2" width="128" height="128"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2016-tesla-model s-front_11809_032_640x480_evox02.png" translatesAutoresizingMaskIntoConstraints="NO" id="HQC-jB-rmd">
+                                                            <rect key="frame" x="8" y="8" width="128" height="128"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="128" id="a0u-kx-Q3j"/>
                                                                 <constraint firstAttribute="width" constant="128" id="oX4-oH-m6d"/>
@@ -60,19 +60,19 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDo-Tf-3aR">
-                                                            <rect key="frame" x="144" y="37" width="207" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the description. This text is longer than the rest." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7C-5k-ASd">
+                                                            <rect key="frame" x="144" y="62.5" width="207" height="63"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="6vm-KC-MFC"/>
+                                                                <constraint firstAttribute="height" constant="63" id="c3M-m5-6te"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the description. This text is longer than the rest." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7C-5k-ASd">
-                                                            <rect key="frame" x="144" y="62.5" width="207" height="63"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDo-Tf-3aR">
+                                                            <rect key="frame" x="144" y="37" width="207" height="21"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="63" id="c3M-m5-6te"/>
+                                                                <constraint firstAttribute="height" constant="21" id="6vm-KC-MFC"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,6 +105,12 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="details" destination="D7C-5k-ASd" id="5Ue-UV-cJv"/>
+                                            <outlet property="price" destination="wDo-Tf-3aR" id="ZIf-9Q-7sq"/>
+                                            <outlet property="thumb" destination="HQC-jB-rmd" id="u2P-xb-dgw"/>
+                                            <outlet property="title" destination="6aA-hq-TPd" id="Lra-lM-45R"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -123,6 +129,10 @@
                     <navigationItem key="navigationItem" title="DreamLister" id="TXd-tp-lDS">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KpO-fk-Zo0"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="9um-8E-phw" id="ZLH-a1-O8a"/>
+                        <outlet property="tableView" destination="hpw-sa-J4Z" id="tnZ-FV-PZf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,7 +143,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zG8-Ue-QDo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6DN-Be-reR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6DN-Be-reR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
