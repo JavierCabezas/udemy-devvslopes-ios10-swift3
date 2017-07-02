@@ -14,5 +14,10 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var details: UILabel!
 
-   
+    //This function links the CoreData Item class and the actual ItemCell class
+    func configureCell(item: Item){
+        title.text = item.title;
+        price.text = "$\(item.price)"
+        details.text = item.details
+    }
 }
